@@ -1,0 +1,76 @@
+.title {
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+.form {
+   display: flex;
+   margin-bottom: 100px;
+}
+
+.info {
+   display: block;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+strong {
+   margin-right: 10px;
+}
+
+.form__input {
+   margin-right: 50px;
+   padding: 10px 10px;
+   border-radius: 10px;
+}
+
+.form__button {
+   padding: 8px;
+   border-radius: 10px;
+}
+
+.list {
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   margin-right: 200px;
+   margin-left: 200px;
+}
+
+.item {
+   list-style: none;
+   width: 200px;
+   border: 2px solid black;
+   border-radius: 10px;
+}
+
+.hero {
+   padding: 30px;
+   text-align: center;
+}
+
+.list__image {
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.list__text {
+   text-align: center;
+}
+
+.list__span-man {
+   display: block;
+}
+
+.list__span-biycle {
+   display: block;
+}
+
+.list__span-car {
+   display: block;
+}
+
+.list__span-airplane {
+   display: block;
+}
+
