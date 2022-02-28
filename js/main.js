@@ -31,68 +31,133 @@
 var elForm = document.querySelector(".form");
 var elInput = document.querySelector(".form__input");
 var elButton = document.querySelector(".form__button");
-var elSpan  = document.querySelector(".list__span-man");
+var elSpan1  = document.querySelector(".list__span-man");
 var elSpan2  = document.querySelector(".list__span-biycle");
 var elSpan3  = document.querySelector(".list__span-car");
 var elSpan4  = document.querySelector(".list__span-airplane");
 
 
 
-     var speed2 = 20.1;
-     var speed3 = 70;
-     var speed4 = 800;
-     var speed1 = 3.6;
-
-  function standMan (x) {
-
-   elForm.addEventListener("submit",function(event){
-      event.preventDefault();
+elForm.addEventListener("submit",function(event) {
+   event.preventDefault();
    
    
-     var elInputVal = elInput.value;
-
-   return elSpan.textContent = Math.round (elInputVal / x)
-})  }
-
-function biycle (y) {
-
-   elForm.addEventListener("submit",function(event){
-      event.preventDefault();
    
+   var elResult =  document.querySelector(".result");
+   var elInputVal = elInput.value;
+   var bike = 20.1;
+   var car = 70;
+   var airplane = 800;
+   var speed = 3.6;
+
+   if (elInputVal <= 0 || isNaN(elInputVal)) {
+      elResult.textContent = "0 dan katta raqam kiriting,faqat raqam";
+
+      elResult.classList.add("result-error");
+      return;
+   }
+
+   else{
+
+      elError.textContent = "";
+  
+      elError.classList.remove("result-error");
+    }
+  
    
-     var elInputVal = elInput.value;
+   function calculateTime1(elInputVal) {
+      
+      
+      var hour = Math.floor(elInputVal / speed);
+      var minute = Math.floor(((elInputVal / speed) - hour) * 60);
+      
+      return hour + " soat " + minute + " minut ";
+   }
 
-   return elSpan2.textContent = Math.round (elInputVal / y)
-})  }
+   function calculateTime2(distance,speed) {
+      
+     
+      var hour = Math.floor(elInputVal / bike);
+      var minute = Math.floor((elInputVal / bike - hour) * 60);
+      
+      return hour + " soat " + minute + " minut ";
+   }
 
-
-function car (z) {
-
-   elForm.addEventListener("submit",function(event){
-      event.preventDefault();
    
+   function calculateTime3(distance,speed) {
+    
+      
+      var hour = Math.floor(elInputVal / car);
+      var minute = Math.floor((elInputVal / car - hour) * 60);
+      
+      return hour + " soat " + minute + " minut ";
+   }
+  
+  
    
-     var elInputVal = elInput.value;
+   function calculateTime4(distance,speed) {
+      
+      
+      var hour = Math.floor(elInputVal / airplane);
+      var minute = Math.floor((elInputVal / airplane - hour) * 60);
+      
+      return hour + " soat " + minute + " minut ";
+   }
+  
+  
+         
+         elSpan1.textContent = calculateTime1(elInputVal);
+         elSpan2.textContent = calculateTime2();
+         elSpan3.textContent = calculateTime3();
+         elSpan4.textContent = calculateTime4();
+         
+      })
+      
 
-   return elSpan3.textContent = Math.round (elInputVal / z)
-})  }
 
-
-function airplane (d) {
-
-   elForm.addEventListener("submit",function(event){
-      event.preventDefault();
-   
-   
-     var elInputVal = elInput.value;
-
-   return elSpan4.textContent = Math.round (elInputVal / d)
-})  }
-
-
-
-console.log(standMan(3.6));
-console.log(biycle(20.1));
-console.log(car(70));
-console.log(airplane(800));
-
+       
+   // function biycle (y) {
+      
+   //    elForm.addEventListener("submit",function(event){
+   //       event.preventDefault();
+         
+         
+   //       var elInputVal = elInput.value;
+         
+   //       return elSpan2.textContent = Math.round (elInputVal / y)
+   //    })  }
+      
+      
+   //    function car (z) {
+         
+   //       elForm.addEventListener("submit",function(event){
+   //          event.preventDefault();
+            
+            
+   //          var elInputVal = elInput.value;
+            
+   //          return elSpan3.textContent = Math.round (elInputVal / z)
+   //       })  }
+         
+         
+   //       function airplane (d) {
+            
+   //          elForm.addEventListener("submit",function(event){
+   //             //    event.preventDefault();
+               
+               
+   //             var elInputVal = elInput.value;
+               
+   //             return elSpan4.textContent = Math.round (elInputVal / d);
+   //          })  
+            
+   //       }
+      
+      
+      
+      // console.log(standMan(3.6));
+      // console.log(biycle(20.1));
+      // console.log(car(70));
+      // console.log(airplane(800));
+      
+      

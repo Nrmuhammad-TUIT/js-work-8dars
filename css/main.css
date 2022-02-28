@@ -6,6 +6,7 @@
 .form {
    display: flex;
    margin-bottom: 100px;
+   flex-direction: column;
 }
 
 .info {
@@ -28,6 +29,19 @@ strong {
    padding: 8px;
    border-radius: 10px;
 }
+
+.result-error {
+   display: inline-block;
+   margin-top: 10px;
+   padding: 10px;
+   border: 3px solid red;
+   color: rgb(223, 85, 67);
+   border-radius: 5px;
+   margin-right: auto;
+   margin-left: auto;
+   background-color: aqua;
+}
+
 
 .list {
    list-style: none;
