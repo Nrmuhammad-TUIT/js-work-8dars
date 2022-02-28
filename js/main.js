@@ -56,14 +56,7 @@ elForm.addEventListener("submit",function(event) {
       elResult.classList.add("result-error");
       return;
    }
-
-   else{
-
-      elError.textContent = "";
-  
-      elError.classList.remove("result-error");
-    }
-  
+   
    
    function calculateTime1(elInputVal) {
       
