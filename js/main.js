@@ -67,7 +67,7 @@ elForm.addEventListener("submit",function(event) {
       return hour + " soat " + minute + " minut ";
    }
 
-   function calculateTime2(distance,speed) {
+   function calculateTime2(elInputVal) {
       
      
       var hour = Math.floor(elInputVal / bike);
@@ -77,7 +77,7 @@ elForm.addEventListener("submit",function(event) {
    }
 
    
-   function calculateTime3(distance,speed) {
+   function calculateTime3(elInputVal) {
     
       
       var hour = Math.floor(elInputVal / car);
@@ -88,7 +88,7 @@ elForm.addEventListener("submit",function(event) {
   
   
    
-   function calculateTime4(distance,speed) {
+   function calculateTime4(elInputVal) {
       
       
       var hour = Math.floor(elInputVal / airplane);
@@ -100,9 +100,9 @@ elForm.addEventListener("submit",function(event) {
   
          
          elSpan1.textContent = calculateTime1(elInputVal);
-         elSpan2.textContent = calculateTime2();
-         elSpan3.textContent = calculateTime3();
-         elSpan4.textContent = calculateTime4();
+         elSpan2.textContent = calculateTime2(elInputVal);
+         elSpan3.textContent = calculateTime3(elInputVal);
+         elSpan4.textContent = calculateTime4(elInputVal);
          
       })
       
