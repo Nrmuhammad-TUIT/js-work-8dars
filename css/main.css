@@ -8,7 +8,7 @@
    margin-bottom: 100px;
    flex-direction: column;
 }
-
+   
 .info {
    display: block;
    margin-right: auto;
@@ -21,7 +21,7 @@ strong {
 
 .form__input {
    margin-right: 50px;
-   padding: 10px 10px;
+   padding: 10px;
    border-radius: 10px;
 }
 

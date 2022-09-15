@@ -24,7 +24,7 @@
 //    }
 // }
 
-// console.log(checkage("Ibrohim", 3))
+// console.log(checkage("Ibrohim", 3))                          
 
 
 
@@ -40,6 +40,7 @@ var elSpan4  = document.querySelector(".list__span-airplane");
 
 elForm.addEventListener("submit",function(event) {
    event.preventDefault();
+   
    
    
    
